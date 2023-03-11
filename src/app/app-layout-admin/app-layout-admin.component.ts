@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app-layout-admin.component.css']
 })
 export class AppLayoutAdminComponent {
-
+  items=[
+    {description:"Kahvaltı",action:"No"},
+    {description:"Ödev",action:"No"},
+    {description:"Temizlik",action:"No"},
+    {description:"İş",action:"No"}
+  ];
 }
