@@ -9,15 +9,15 @@ import { faStackOverflow, faGithub, faMedium, faFacebook } from '@fortawesome/fr
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
 import { AppLayoutAdminComponent } from './app-layout-admin/app-layout-admin.component';
+import { MoviesComponent } from './movies/movies.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
-    AppLayoutAdminComponent
+    AppLayoutAdminComponent,
+    MoviesComponent
   ],
   imports: [
     BrowserModule,
