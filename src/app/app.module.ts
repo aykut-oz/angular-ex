@@ -12,6 +12,8 @@ import { HomeComponent } from './home/home.component';
 import { AppLayoutAdminComponent } from './app-layout-admin/app-layout-admin.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieComponent } from './movie/movie.component';
+import { MovieDetailComponent } from './movie-detail/movie-detail.component';
+import { LoggingComponent } from './logging/logging.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { MovieComponent } from './movie/movie.component';
     HomeComponent,
     AppLayoutAdminComponent,
     MoviesComponent,
-    MovieComponent
+    MovieComponent,
+    MovieDetailComponent,
+    LoggingComponent
   ],
   imports: [
     BrowserModule,
