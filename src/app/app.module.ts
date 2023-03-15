@@ -11,13 +11,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AppLayoutAdminComponent } from './app-layout-admin/app-layout-admin.component';
 import { MoviesComponent } from './movies/movies.component';
+import { MovieComponent } from './movie/movie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AppLayoutAdminComponent,
-    MoviesComponent
+    MoviesComponent,
+    MovieComponent
   ],
   imports: [
     BrowserModule,
