@@ -8,7 +8,7 @@ export class Model{
        this.items = [
           new TodoItem("Spor",false),
           new TodoItem("İş",false),
-          new TodoItem("Ödev",true),
+          new TodoItem("Ödev",false),
        ]
     }
 }
