@@ -15,4 +15,9 @@ export class MovieService {
     this.loggingService.add('MovieService:listing movies');
     return of(Movies);
   }
+
+  getMovie(id):Observable<Movie>{
+    this.loggingService.add('MovieService:MovieDetail by Id='+id)
+    return of(Movies.find(movie=>movie.id===id));
+  }
 }

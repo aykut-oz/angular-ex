@@ -6,13 +6,11 @@
     </div>
     <div class="card-body">
         <ul class="list-group list-group-flush">
-            <li class="list-group-item" 
-            (click)="onSelect(item)"
-             id="{{item.id}}" *ngFor="let item of movies"
-             [class.active]="item===selectedMovie"
+            <li class="list-group-item" *ngFor="let movie of movies" routerLink='/detail/{{movie.id}}' id="{{movie.id}}" 
+           
              >
-                <span class="badge bg-secondary">  {{item.id}}</span>
-                {{item.name}}
+                <span class="badge bg-secondary">  {{movie.id}}</span>
+                {{movie.name}}
                 <span class="close btn btn-sm btn-danger">x</span>
             </li>
         </ul>
