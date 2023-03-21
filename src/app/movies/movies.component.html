@@ -1,4 +1,3 @@
-
 <app-movie-detail [movie]="selectedMovie"></app-movie-detail>
 <div class="card">
     <div class="card-header">
@@ -6,14 +5,34 @@
     </div>
     <div class="card-body">
         <ul class="list-group list-group-flush">
-            <li class="list-group-item" *ngFor="let movie of movies" routerLink='/detail/{{movie.id}}' id="{{movie.id}}" 
-           
-             >
-                <span class="badge bg-secondary">  {{movie.id}}</span>
+            <li class="list-group-item" *ngFor="let movie of movies" routerLink='/detail/{{movie.id}}'
+                id="{{movie.id}}">
+                <span class="badge bg-secondary"> {{movie.id}}</span>
                 {{movie.name}}
-                <span class="close btn btn-sm btn-danger">x</span>
+                <span class="close btn btn-sm btn-danger" (click)="delete(movie)">x</span>
             </li>
         </ul>
     </div>
-    
+
+</div>
+
+<div class="card">
+    <div class="card-header">
+        Add Movie
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input #name class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="imageUrl">ImageUrl</label>
+            <input #imageUrl class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <input #description class="form-control">
+        </div>
+        <button (click)="add(name.value,imageUrl.value,description.value); name.value='';description.value='';imageUrl.value=''" class="btn btn-primary btn-sm">Save</button>
+    </div>
 </div>
