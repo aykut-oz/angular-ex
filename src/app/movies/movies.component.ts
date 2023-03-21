@@ -12,7 +12,9 @@ export class MoviesComponent {
   title = 'Movie List';
   movies?: Movie[];
   selectedMovie?: Movie;
-  constructor(private movieService: MovieService,private loggingService:LoggingService) { }
+  constructor(
+    private movieService: MovieService,
+    private loggingService:LoggingService) { }
   ngOnInit(): void {
     this.getMovies();
   }
